@@ -49,6 +49,69 @@ Se crea la colección de POSTMAN para enviar las peticiones:
 
 7. Cree una nueva Function que resuleva el problema de Fibonacci pero esta vez utilice un enfoque recursivo con memoization. Pruebe la función varias veces, después no haga nada por al menos 5 minutos. Pruebe la función de nuevo con los valores anteriores. ¿Cuál es el comportamiento?.
 
+   ![image](https://github.com/AndresOnate/ARSW_LAB10/assets/63562181/9c01dfe9-252f-4699-a04e-c1dabc36c9ba)
+
+   Desplegamos la aplicación:
+
+   ![image](https://github.com/AndresOnate/ARSW_LAB10/assets/63562181/3fcf6ff7-332c-48ef-9cee-e8fa052e02f4)
+
+   Se ejecuta las siguientes pruebas:
+
+   100:
+
+   ![image](https://github.com/AndresOnate/ARSW_LAB10/assets/63562181/1aa7ccde-f636-4d8c-9bbc-1a2cf3d41e92)
+
+   1000:
+
+   ![image](https://github.com/AndresOnate/ARSW_LAB10/assets/63562181/e54fcba8-4301-4728-84aa-84ccdc0f7a11)
+
+   10000:
+
+   ![image](https://github.com/AndresOnate/ARSW_LAB10/assets/63562181/7f846307-c711-4b62-a525-bb70cbfaaebe)
+
+   100000:
+
+   ![image](https://github.com/AndresOnate/ARSW_LAB10/assets/63562181/1920b707-23e4-459f-8f8a-a0f4c7aa074c)
+
+   A partir de este caso de prueba la fnción retorna un error 500 del servidor, dado que existen limites de recursión en el runtime:
+
+   ![image](https://github.com/AndresOnate/ARSW_LAB10/assets/63562181/740ef2c0-a136-4515-84f4-a45719821a15)
+
+   Metricas con las pruebas realizadas:
+
+   ![image](https://github.com/AndresOnate/ARSW_LAB10/assets/63562181/5a44a4e5-925c-4a91-80c9-7269a269db44)
+
+   ![image](https://github.com/AndresOnate/ARSW_LAB10/assets/63562181/89032899-1fd7-40d8-830d-7668d684f1ad)
+
+   Esperamos los 5 minutos para ejecutar de nuevo la prueba:
+
+   100:
+   ![image](https://github.com/AndresOnate/ARSW_LAB10/assets/63562181/eb9e30de-d512-44a9-a111-9790ff824f85)
+
+   1000:
+   ![image](https://github.com/AndresOnate/ARSW_LAB10/assets/63562181/56cff349-05f5-4320-856f-077b5972d3e8)
+
+   10000:
+   ![image](https://github.com/AndresOnate/ARSW_LAB10/assets/63562181/90881c61-3189-487b-aaa2-491b6caae385)
+
+   100000:
+   ![image](https://github.com/AndresOnate/ARSW_LAB10/assets/63562181/7180ee14-0952-4a09-aad6-bdd372116121)
+
+   Metricas:
+   
+    ![image](https://github.com/AndresOnate/ARSW_LAB10/assets/63562181/cce36ad3-067b-4a96-8e27-493d234ba674)
+
+   ![image](https://github.com/AndresOnate/ARSW_LAB10/assets/63562181/58d5d6ed-f72b-4bd5-af6d-fe8fdaa2f166)
+
+   Al implementar una función auxiliar para los casos en que los números son muy grandes el servidor puede procesos estos números:
+
+   100000:
+   
+   ![image](https://github.com/AndresOnate/ARSW_LAB10/assets/63562181/4a4ab020-7da8-437f-8f81-0b393902f42d)
+
+   Se puede observar que implementando la memorizacion en el algoritmo se puede apreciar una gran reduccion de tiempo.
+
+
 **Preguntas**
 
 * ¿Qué es un Azure Function?
