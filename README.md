@@ -47,6 +47,8 @@ Se crea la colección de POSTMAN para enviar las peticiones:
 
 ![image](https://github.com/AndresOnate/ARSW_LAB10/assets/63562181/91e3c452-5560-4ddc-b56d-fe266c188a93)
 
+Informe en la sección de preguntas.
+
 7. Cree una nueva Function que resuleva el problema de Fibonacci pero esta vez utilice un enfoque recursivo con memoization. Pruebe la función varias veces, después no haga nada por al menos 5 minutos. Pruebe la función de nuevo con los valores anteriores. ¿Cuál es el comportamiento?.
 
    ![image](https://github.com/AndresOnate/ARSW_LAB10/assets/63562181/9c01dfe9-252f-4699-a04e-c1dabc36c9ba)
@@ -81,7 +83,9 @@ Se crea la colección de POSTMAN para enviar las peticiones:
 
    ![image](https://github.com/AndresOnate/ARSW_LAB10/assets/63562181/5a44a4e5-925c-4a91-80c9-7269a269db44)
 
-   ![image](https://github.com/AndresOnate/ARSW_LAB10/assets/63562181/89032899-1fd7-40d8-830d-7668d684f1ad)
+   Del escenario anterior podemos concluir que:
+   - El tiempo de respuesta promedio se encuentra entre los 151 ms y los 223 ms.
+   - La memoria usada para procesar las peticiones es de 324.3 MB
 
    Esperamos los 5 minutos para ejecutar de nuevo la prueba:
 
@@ -101,9 +105,13 @@ Se crea la colección de POSTMAN para enviar las peticiones:
    
     ![image](https://github.com/AndresOnate/ARSW_LAB10/assets/63562181/cce36ad3-067b-4a96-8e27-493d234ba674)
 
-   ![image](https://github.com/AndresOnate/ARSW_LAB10/assets/63562181/58d5d6ed-f72b-4bd5-af6d-fe8fdaa2f166)
+   Del escenario anterior podemos concluir que:
+   - El tiempo de respuesta promedio se encuentra entre los 143 ms y los 202 ms.
+   - La memoria usada para procesar las peticiones es de 313.3 MB
+  
+   Podemos ver que los tiempos promedios no mejoraron de forma considerable. 
 
-   Al implementar una función auxiliar para los casos en que los números son muy grandes el servidor puede procesos estos números:
+   Al implementar una función auxiliar para los casos en que los números son muy grandes el servidor puede procesos estos números, evitando de esta forma un error 5XX del servidor:
 
    100000:
    
